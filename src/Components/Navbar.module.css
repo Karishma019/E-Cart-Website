@@ -1,0 +1,68 @@
+.header {
+  background: var(--red-color);
+  color: aliceblue;
+  height: 65px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem auto;
+}
+.logo {
+  font-size: 1.4rem;
+}
+.navlinks {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.navlinks a {
+  transition: all 0.1s ease-in;
+}
+.navlinks a:hover {
+  border-bottom: 2px solid white;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.icons {
+  position: relative;
+  top: 0.3rem;
+  left: 0.5rem;
+}
+
+.navBarIcon {
+  display: none;
+  z-index: 999;
+}
+
+@media screen and (max-width: 910px) {
+  .navBarIcon {
+    display: block;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  .navlinks {
+    flex-direction: column;
+    background: #b83628e4;
+    z-index: 2;
+    width: 300px;
+    height: 100vh;
+    padding: 100px 50px 0 50px;
+    position: absolute;
+    top: 0;
+    right: -300px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .navShowLinks {
+    right: 0;
+  }
+}

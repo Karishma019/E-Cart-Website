@@ -1,0 +1,7 @@
+.container {
+  margin: 4rem 0;
+}
+
+.container > h2 {
+  font-size: 1.8rem;
+}

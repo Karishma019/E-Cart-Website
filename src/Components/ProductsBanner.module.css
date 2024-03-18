@@ -1,0 +1,44 @@
+.productsBanner {
+  height: 60vh;
+  overflow: hidden;
+}
+
+.productsImg {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  opacity: 0.6;
+}
+
+.bannerContent {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.bannerContent h1 {
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+
+.bannerContent p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 650px) {
+  .productsBanner {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .productsBanner {
+    height: 50%;
+  }
+  .bannerContent {
+    top: 30%;
+  }
+}

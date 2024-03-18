@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.container > h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.slidesContainer {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 1rem;
+  scroll-behavior: smooth;
+  margin: 2rem 0;
+}
+
+.slidesContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn > button {
+  font-size: 1.2rem;
+}
