@@ -36,16 +36,41 @@ function Navbar() {
               showNav ? styles.navShowLinks : ""
             }`}
           >
-            <Link to="/">Home</Link>
+            <Link
+              onClick={() => {
+                setShowNav(false);
+              }}
+              to="/"
+            >
+              Home
+            </Link>
 
-            <Link to="/categories/all">Categories</Link>
+            <Link
+              onClick={() => {
+                window.scrollTo(0, 0);
+                setShowNav(false);
+              }}
+              to="/categories/all"
+            >
+              Categories
+            </Link>
 
-            <Link to="/wishlist">
+            <Link
+              onClick={() => {
+                setShowNav(false);
+              }}
+              to="/wishlist"
+            >
               WishList
               <GrFavorite className={`${styles.icons}`} />
             </Link>
 
-            <Link to="/cart">
+            <Link
+              onClick={() => {
+                setShowNav(false);
+              }}
+              to="/cart"
+            >
               Cart
               <TfiShoppingCartFull className={`${styles.icons}`} />
             </Link>

@@ -33,7 +33,9 @@ function Cart() {
             {cart.map((item) => {
               return <CartItem key={item.id} {...item} />;
             })}
-            <h1 className="cartTotal">Total Amount : ${totalAmount} </h1>
+            <h1 className="cartTotal">
+              Total Amount : ${Math.round(totalAmount)}
+            </h1>
           </div>
         )}
       </div>

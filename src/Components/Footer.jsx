@@ -33,13 +33,34 @@ function Footer() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/categories/all">Categories</Link>
+              <Link
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                to="/categories/all"
+              >
+                Categories
+              </Link>
             </li>
             <li>
-              <Link to="/wishlist">WishList</Link>
+              <Link
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                to="/wishlist"
+              >
+                WishList
+              </Link>
             </li>
             <li>
-              <Link to="/cart">View Cart</Link>
+              <Link
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                to="/cart"
+              >
+                View Cart
+              </Link>
             </li>
           </ul>
         </div>
@@ -47,16 +68,44 @@ function Footer() {
           <p className={`${styles.titles}`}>Discover</p>
           <ul className={`${styles.lists}`}>
             <li>
-              <Link to="/">Men's Clothing</Link>
+              <Link
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                to="/"
+              >
+                Men's Clothing
+              </Link>
             </li>
             <li>
-              <Link to="/categories/all">Women's Clothing</Link>
+              <Link
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                to="/categories/all"
+              >
+                Women's Clothing
+              </Link>
             </li>
             <li>
-              <Link to="/wishlist">Jewelleries</Link>
+              <Link
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                to="/wishlist"
+              >
+                Jewelleries
+              </Link>
             </li>
             <li>
-              <Link to="/cart">Electronics</Link>
+              <Link
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                to="/cart"
+              >
+                Electronics
+              </Link>
             </li>
           </ul>
         </div>

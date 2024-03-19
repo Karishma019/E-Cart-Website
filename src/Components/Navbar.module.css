@@ -58,11 +58,12 @@ a {
     padding: 100px 50px 0 50px;
     position: absolute;
     top: 0;
-    right: -300px;
+    right: 0px;
+    transform: translateX(100%);
     transition: all 0.2s ease-in-out;
   }
 
   .navShowLinks {
-    right: 0;
+    transform: translateX(0);
   }
 }

@@ -76,7 +76,7 @@ body {
 
 @media screen and (max-width: 550px) {
   :root {
-    font-size: 75%;
+    font-size: 95%;
   }
 
   .button {

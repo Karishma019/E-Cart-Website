@@ -39,7 +39,12 @@ function Product({ title, image, price, category, id }) {
   return (
     <>
       <div className={`${styles.product}`}>
-        <Link to={`/categories/${category}/${id}`}>
+        <Link
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          to={`/categories/${category}/${id}`}
+        >
           <div>
             <img src={image} alt={title} className={`${styles.productImg}`} />
             <p className={`${styles.productCategory}`}>{category}</p>
